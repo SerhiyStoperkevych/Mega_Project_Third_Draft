@@ -1,14 +1,14 @@
-dfimport React, {useContext} from 'react';
+import React, {useContext} from 'react';
 import {AppContext} from '../../../../AppContext'; 
 import 'bootstrap-icons/font/bootstrap-icons.css';
 import { Link } from 'react-router-dom';
 
-const Top = () => {
+const Preferences = () => {
     const { data } = useContext(AppContext);
 
     return(
             <div className='catalog'>
-                <h2>Top 15</h2>
+                <h2>Preferences</h2>
                 <h3>Genres</h3>
                 <ul>
                     {data.map(item => (
@@ -28,4 +28,4 @@ const Top = () => {
     );
 }
 
-export default Top;
+export default Preferences;
